@@ -1,0 +1,5 @@
+CREATE TABLE photos(
+	id SERIAL PRIMARY KEY,
+	"productId" INTEGER NOT NULL REFERENCES products(id),
+	img TEXT NOT NULL
+);
